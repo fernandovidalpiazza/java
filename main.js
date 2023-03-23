@@ -28,54 +28,53 @@ let ID = prompt ("ingrese el id de su pocima faborita del 1 al 6 " )
 
 
 
-function resultadodonacion (cantidad, donacion){
+function resultadodonacion(cantidad, donacion){
   let resultado = cantidad * donacion
   alert  ("gracias por donar $ "  + resultado  )
 
 }
 
-  do{
+  do {
 switch (ID) {
   
     case "1":
-       alert ("Ud. eligio la posima de la felicidad")
-       cantidad = prompt ("ingrese al cantindad de pocimas de la felicidad deseadas")
+       alert ("Ud. eligió la pócima de la felicidad ")
+       cantidad = prompt ("Ingrese la cantidad de pócimas de la felicidad deseadas")
        donacion = prompt ("ingrese el monto a donar por pocimas")
        resultadodonacion (cantidad,donacion)
       break
 
     case "2":
-       alert ("Ud. eligio la posima de dinero por siempre")
-       cantidad = prompt ("ingrese al cantindad de pocimas de la felicidad deseadas")
-       donacion = prompt ("ingrese el monto a donar por pocimas")
+       alert ("Ud. eligió la pócima dinero por siempre")
+       cantidad = prompt ("Ingrese la cantidad de pócimas dinero por siempre ")
+       donacion = prompt ("Ingrese el monto a donar por pócimas")
        resultadodonacion (cantidad,donacion)
       break
 
     case "3":
-        alert ("Ud. eligio la posima de joven por siempre")
-        cantidad = prompt ("ingrese al cantindad de pocimas de la felicidad deseadas")
-        donacion = prompt ("ingrese el monto a donar por pocimas")
+       alert ("Ud. eligió la pócima dinero por siempre")
+        cantidad = prompt ("ingrese al cantindad de pócimas dinero por siempre")
+        donacion = prompt ("ingrese el monto a donar por pócimas")
         resultadodonacion (cantidad,donacion)
-        ID = prompt ("ingrese el id de su pocima faborita del 1 al 6 o s para finalizar la compra" )
-       break
+        break
 
     case "4":
-        alert ("Ud. eligio la posima de belleza por siempre")
-        cantidad = prompt ("ingrese al cantindad de pocimas de la felicidad deseadas")
+        alert ("Ud. eligió la pócima de belleza por siempre")
+        cantidad = prompt ("ingrese al cantindad de pocimas de belleza por siempre")
         donacion = prompt ("ingrese el monto a donar por pocimas")
         resultadodonacion (cantidad,donacion)
         break
 
     case "5":
-        alert ("Ud. eligio la posima buena suerte")
-        cantidad = prompt ("ingrese al cantindad de pocimas de la felicidad deseadas")
-        donacion = prompt ("ingrese el monto a donar por pocimas")
+        alert ("Ud. eligio la pócima buena suerte")
+        cantidad = prompt ("ingrese al cantindad de pocimas buena suerte")
+        donacion = prompt ("ingrese el monto a donar por pócimas")
         resultadodonacion (cantidad,donacion)
         break
     case "6":
-        alert ("Ud. eligio la posima abre nuevos caminos")
-        cantidad = prompt ("ingrese al cantindad de pocimas de la felicidad deseadas")
-        donacion = prompt ("ingrese el monto a donar por pocimas")
+        alert ("Ud. eligio la pócima abre nuevos caminos")
+        cantidad = prompt ("ingrese al cantindad de pocimas abre caminos")
+        donacion = prompt ("ingrese el monto a donar por pócimas")
         resultadodonacion (cantidad,donacion)
         break
     default:
