@@ -3,20 +3,10 @@ let continuar = true
 while (continuar){
 let ID = prompt ("ingrese el id de su pócima favorita del 1 al 6 " )
 
-
-
-
-
-
 function resultadodonacion (cantidad, donacion, ID){
   let resultado  =  (cantidad * donacion) 
     alert  ("gracias por donar $ "  + resultado + " Ud. va a recibir la pocima N°" + ID )
-    
 }
-
-
-
-
 
 switch (ID) {
   
@@ -39,9 +29,9 @@ switch (ID) {
       break
 
     case "3":
-       alert ("Ud. eligió la pócima dinero por siempre")
+       alert ("Ud. eligió la pócima joven por siempre")
        do{
-        cantidad = parseInt (prompt ("ingrese al cantindad de pócimas dinero por siempre"))
+        cantidad = parseInt (prompt ("ingrese al cantindad de pócimas joven por siempre"))
         donacion = prompt ("ingrese el monto a donar por pócimas")
         }while(isNaN(cantidad, donacion))
         resultadodonacion (cantidad,donacion, ID)
@@ -77,7 +67,7 @@ switch (ID) {
       break
    
 }
-continuar=confirm("queres seguir obteniedo pocimas")
+continuar=confirm("Presione aceptar para continuar comprando o cancelar para finalizar ")
 }
 
 
