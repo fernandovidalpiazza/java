@@ -7,7 +7,7 @@ const descripcionFelices= ("esta pocima le brindara felicidad por siempre por un
  if (promptValue == "1") {
     let continuar = true
 while (continuar){
-ID = prompt ("ingrese el id de su pócima favorita del 1 al 6 " )
+ID = prompt ("ingrese el id de su pócima favorita del 1 al 6  " )
 
 function resultadodonacion (cantidad, donacion, ID){
      
@@ -93,16 +93,18 @@ continuar=confirm("Presione aceptar para continuar comprando o cancelar para fin
 } else if (promptValue =="2"){
   alert ("ud. a eligido buscar info, por favor ingrese el id de su pocima favorita ")
   prompt ("ingrese el id posima a consultar")
-  const datos = [
+  let id
+  let datos = [
     { 
-      id: 1,
+      id: "1",
       descripcion: "esta pocima le brindara felicidad por siempre por un año",
       cantidad: 5,
       efectosColaterales: "esta posimas puede hacer que se ria todo el tiempo"
 },
+
 ]
-  const pocimaBuscada = datos.find ((dat) =>{
-          return dat.id == 1
+  const pocimaBuscada = datos.find((dat) =>{
+          return dat.id == "1"
   })
 console.log(pocimaBuscada)
 
